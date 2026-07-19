@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-D1GQ4HpF.js"></script>
-    <link rel="stylesheet" crossorigin href="/browservania/assets/index-FdTtsP7S.css">
+    <script type="module" crossorigin src="/browservania/assets/index-CDjOXbq1.js"></script>
+    <link rel="stylesheet" crossorigin href="/browservania/assets/index-Bg7AtQ_Q.css">
   </head>
   <body>
     <main id="game" aria-label="Browservania game canvas"></main>
@@ -194,12 +194,16 @@
     </div>
 
     <div id="touch-controls" class="touch-controls" aria-label="On-screen controls" hidden>
-      <div class="touch-dpad" aria-label="Movement controls">
-        <button class="touch-button touch-dpad__up" type="button" data-input-action="up" aria-label="Up">▲</button>
-        <button class="touch-button touch-dpad__left" type="button" data-input-action="left" aria-label="Left">◀</button>
-        <span class="touch-dpad__center" aria-hidden="true"></span>
-        <button class="touch-button touch-dpad__right" type="button" data-input-action="right" aria-label="Right">▶</button>
-        <button class="touch-button touch-dpad__down" type="button" data-input-action="down" aria-label="Down">▼</button>
+      <div
+        id="touch-gesture-zone"
+        class="touch-gesture-zone"
+        aria-label="Movement gesture area"
+      ></div>
+      <div id="touch-gesture-indicator" class="touch-gesture-indicator" aria-hidden="true">
+        <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--up">▲</span>
+        <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--left">◀</span>
+        <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--right">▶</span>
+        <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--down">▼</span>
       </div>
 
       <div class="touch-actions" aria-label="Action controls">

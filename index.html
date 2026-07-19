@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-B3ymb5l8.js"></script>
-    <link rel="stylesheet" crossorigin href="/browservania/assets/index-C0k7tUsF.css">
+    <script type="module" crossorigin src="/browservania/assets/index-BqsJevuL.js"></script>
+    <link rel="stylesheet" crossorigin href="/browservania/assets/index-BnB3XR_Y.css">
   </head>
   <body>
     <main id="game" aria-label="Browservania game canvas"></main>
@@ -103,25 +103,50 @@
             </span>
           </label>
 
-          <div id="pause-touch-sensitivity-setting" class="pause-menu__setting">
-            <label for="pause-touch-sensitivity">
+          <div id="pause-touch-directional-distance-setting" class="pause-menu__setting">
+            <label for="pause-touch-directional-distance">
               <span>
-                <strong>Directional Touch Input Sensitivity</strong>
-                <small>Higher sensitivity reacts to a shorter finger movement.</small>
+                <strong>Left / Right / Up Gesture Distance</strong>
+                <small>How far to swipe before Left, Right, or Up activates.</small>
               </span>
-              <output id="pause-touch-sensitivity-value" for="pause-touch-sensitivity">7 / 10</output>
+              <output
+                id="pause-touch-directional-distance-value"
+                for="pause-touch-directional-distance"
+              >11 px</output>
             </label>
             <input
-              id="pause-touch-sensitivity"
+              id="pause-touch-directional-distance"
               type="range"
               min="1"
-              max="10"
+              max="20"
+              step="1"
+              value="11"
+            />
+            <div class="pause-menu__range-labels" aria-hidden="true">
+              <span>Short swipe</span>
+              <span>Long swipe</span>
+            </div>
+          </div>
+
+          <div id="pause-touch-down-distance-setting" class="pause-menu__setting">
+            <label for="pause-touch-down-distance">
+              <span>
+                <strong>Down / Pogo Gesture Distance</strong>
+                <small>How far to swipe downward before Down activates.</small>
+              </span>
+              <output id="pause-touch-down-distance-value" for="pause-touch-down-distance">7 px</output>
+            </label>
+            <input
+              id="pause-touch-down-distance"
+              type="range"
+              min="1"
+              max="20"
               step="1"
               value="7"
             />
             <div class="pause-menu__range-labels" aria-hidden="true">
-              <span>Steady</span>
-              <span>Responsive</span>
+              <span>Short swipe</span>
+              <span>Long swipe</span>
             </div>
           </div>
 

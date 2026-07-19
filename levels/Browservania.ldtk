@@ -11,7 +11,7 @@
 	"iid": "20bae0e0-6fc0-11f1-bdc5-4f35ddb46827",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 170,
+	"nextUid": 173,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": "Free",
@@ -4496,7 +4496,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ true ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -4724,7 +4727,7 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": { "id": "V_Float", "params": [3] },
+					"defaultOverride": { "id": "V_Float", "params": [50] },
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -4798,7 +4801,7 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": { "id": "V_Float", "params": [3] },
+					"defaultOverride": { "id": "V_Float", "params": [2] },
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -4835,7 +4838,7 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": { "id": "V_Float", "params": [3] },
+					"defaultOverride": { "id": "V_Float", "params": [1] },
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -8227,7 +8230,7 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [ { "levelIid": "4c266110-6fc0-11f1-bdc5-afbbb4406c05", "dir": "s" }, { "levelIid": "96e1c720-6fc0-11f1-9256-7f6d739d0603", "dir": "w" }, { "levelIid": "a4690c80-6fc0-11f1-9256-157e44a967c0", "dir": "n" } ]
+			"__neighbours": [ { "levelIid": "4c266110-6fc0-11f1-bdc5-afbbb4406c05", "dir": "s" }, { "levelIid": "96e1c720-6fc0-11f1-9256-7f6d739d0603", "dir": "w" }, { "levelIid": "a4690c80-6fc0-11f1-9256-157e44a967c0", "dir": "n" }, { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "e" } ]
 		},
 		{
 			"identifier": "Prison_009",
@@ -8396,7 +8399,14 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [ { "levelIid": "96e1c720-6fc0-11f1-9256-7f6d739d0603", "dir": "w" }, { "levelIid": "7487dfb0-6fc0-11f1-9256-039951085f2d", "dir": "s" }, { "levelIid": "53e54060-6fc0-11f1-8a7b-55afbe112ccf", "dir": "n" }, { "levelIid": "d7a6f510-6fc0-11f1-8a7b-6fc23e840ffb", "dir": "n" } ]
+			"__neighbours": [
+				{ "levelIid": "96e1c720-6fc0-11f1-9256-7f6d739d0603", "dir": "w" },
+				{ "levelIid": "7487dfb0-6fc0-11f1-9256-039951085f2d", "dir": "s" },
+				{ "levelIid": "53e54060-6fc0-11f1-8a7b-55afbe112ccf", "dir": "n" },
+				{ "levelIid": "d7a6f510-6fc0-11f1-8a7b-6fc23e840ffb", "dir": "n" },
+				{ "levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118", "dir": "ne" },
+				{ "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "e" }
+			]
 		},
 		{
 			"identifier": "Prison_010",
@@ -8701,7 +8711,7 @@
 						},
 						{
 							"__identifier": "ObstacleShooter",
-							"__grid": [22,1],
+							"__grid": [21,1],
 							"__pivot": [0,1],
 							"__tags": [],
 							"__tile": null,
@@ -8710,7 +8720,7 @@
 							"width": 32,
 							"height": 32,
 							"defUid": 57,
-							"px": [704,64],
+							"px": [672,64],
 							"fieldInstances": [
 								{ "__identifier": "shooterId", "__type": "String", "__value": "os-prison-020", "__tile": null, "defUid": 58, "realEditorValues": [{
 									"id": "V_String",
@@ -8723,7 +8733,7 @@
 								{ "__identifier": "damage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 63, "realEditorValues": [] },
 								{ "__identifier": "initialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 64, "realEditorValues": [] }
 							],
-							"__worldX": 704,
+							"__worldX": 672,
 							"__worldY": -1408
 						},
 						{
@@ -8945,7 +8955,7 @@
 						0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,
 						1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,
-						1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,
@@ -12381,7 +12391,9 @@
 				{ "levelIid": "53e54060-6fc0-11f1-8a7b-55afbe112ccf", "dir": "w" },
 				{ "levelIid": "a526cbb0-6fc0-11f1-8a7b-35ee2ef1b930", "dir": "n" },
 				{ "levelIid": "6d42cc40-6fc0-11f1-8095-0925aff4bdd3", "dir": "n" },
-				{ "levelIid": "c10cd590-6fc0-11f1-b556-d15cd10a3eec", "dir": "e" }
+				{ "levelIid": "c10cd590-6fc0-11f1-b556-d15cd10a3eec", "dir": "e" },
+				{ "levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118", "dir": "e" },
+				{ "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "se" }
 			]
 		},
 		{
@@ -13452,6 +13464,29 @@
 							],
 							"__worldX": 7760,
 							"__worldY": -1664
+						},
+						{
+							"__identifier": "DamageZone",
+							"__grid": [72,43],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#AB0808",
+							"iid": "d6c0ca50-6fc0-11f1-8178-49f4973f17b1",
+							"width": 32,
+							"height": 96,
+							"defUid": 34,
+							"px": [2304,1392],
+							"fieldInstances": [
+								{ "__identifier": "zoneId", "__type": "String", "__value": "dz-lava-prison-027", "__tile": null, "defUid": 35, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dz-lava-prison-027"]
+								}] },
+								{ "__identifier": "damage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 36, "realEditorValues": [] },
+								{ "__identifier": "kill", "__type": "Bool", "__value": false, "__tile": null, "defUid": 37, "realEditorValues": [] }
+							],
+							"__worldX": 6816,
+							"__worldY": -1488
 						}
 					]
 				},
@@ -13597,10 +13632,10 @@
 						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
@@ -13620,7 +13655,13 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [ { "levelIid": "d7a6f510-6fc0-11f1-8a7b-6fc23e840ffb", "dir": "w" }, { "levelIid": "6d42cc40-6fc0-11f1-8095-0925aff4bdd3", "dir": "w" }, { "levelIid": "3702cc60-6fc0-11f1-b556-77e739e71e94", "dir": "w" }, { "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "s" } ]
+			"__neighbours": [
+				{ "levelIid": "d7a6f510-6fc0-11f1-8a7b-6fc23e840ffb", "dir": "w" },
+				{ "levelIid": "6d42cc40-6fc0-11f1-8095-0925aff4bdd3", "dir": "w" },
+				{ "levelIid": "3702cc60-6fc0-11f1-b556-77e739e71e94", "dir": "w" },
+				{ "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "s" },
+				{ "levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118", "dir": "s" }
+			]
 		},
 		{
 			"identifier": "Forest_001",
@@ -13688,19 +13729,19 @@
 								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
 								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
 								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
-								{ "__identifier": "invincible", "__type": "Bool", "__value": false, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
 								{ "__identifier": "circleCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 150, "realEditorValues": [] },
 								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
 								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
-								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [{
 									"id": "V_Bool",
-									"params": [ true ]
+									"params": [ false ]
 								}] },
 								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
-								{ "__identifier": "laserLength", "__type": "Float", "__value": 3, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
 								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
-								{ "__identifier": "laserDuration", "__type": "Float", "__value": 3, "__tile": null, "defUid": 159, "realEditorValues": [] },
-								{ "__identifier": "laserInterval", "__type": "Float", "__value": 3, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
 								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
 								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
 							],
@@ -13709,7 +13750,7 @@
 						},
 						{
 							"__identifier": "EnemyLaserCrawler",
-							"__grid": [25,2],
+							"__grid": [24,2],
 							"__pivot": [0.5,0.5],
 							"__tags": [],
 							"__tile": null,
@@ -13718,7 +13759,7 @@
 							"width": 16,
 							"height": 16,
 							"defUid": 145,
-							"px": [816,80],
+							"px": [784,80],
 							"fieldInstances": [
 								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-002", "__tile": null, "defUid": 146, "realEditorValues": [{
 									"id": "V_String",
@@ -13728,42 +13769,34 @@
 								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
 								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
 								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
-								{ "__identifier": "invincible", "__type": "Bool", "__value": false, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
 								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
 								}] },
 								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
-								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [ {
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
 									"entityIid": "1e7ba6a0-6fc0-11f1-b556-d3f5c52788f4",
 									"layerIid": "51a879d1-6fc0-11f1-b556-8b45543897c4",
 									"levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438",
 									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
-								}, {
-									"entityIid": "71d75f60-6fc0-11f1-b556-0975e2fcdd64",
-									"layerIid": "51a879d1-6fc0-11f1-b556-8b45543897c4",
-									"levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438",
-									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
-								} ], "__tile": null, "defUid": 153, "realEditorValues": [ {
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["1e7ba6a0-6fc0-11f1-b556-d3f5c52788f4"]
-								}, {
-									"id": "V_String",
-									"params": ["71d75f60-6fc0-11f1-b556-0975e2fcdd64"]
-								} ] },
+								}] },
 								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
 								}] },
-								{ "__identifier": "laserAngle", "__type": "Float", "__value": 180, "__tile": null, "defUid": 156, "realEditorValues": [{ "id": "V_Float", "params": [180] }] },
-								{ "__identifier": "laserLength", "__type": "Float", "__value": 3, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [null] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
 								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
-								{ "__identifier": "laserDuration", "__type": "Float", "__value": 3, "__tile": null, "defUid": 159, "realEditorValues": [] },
-								{ "__identifier": "laserInterval", "__type": "Float", "__value": 3, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
 								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
 								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
 							],
-							"__worldX": 6992,
+							"__worldX": 6960,
 							"__worldY": -1424
 						},
 						{
@@ -13789,30 +13822,8 @@
 							"__worldY": -1424
 						},
 						{
-							"__identifier": "EnemyPathPoint",
-							"__grid": [27,4],
-							"__pivot": [0.5,0.5],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#750000",
-							"iid": "71d75f60-6fc0-11f1-b556-0975e2fcdd64",
-							"width": 16,
-							"height": 16,
-							"defUid": 164,
-							"px": [880,144],
-							"fieldInstances": [
-								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-002-02", "__tile": null, "defUid": 165, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["pp-lcrawler-forest-002-02"]
-								}] },
-								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
-							],
-							"__worldX": 7056,
-							"__worldY": -1360
-						},
-						{
 							"__identifier": "EnemyLaserCrawler",
-							"__grid": [19,8],
+							"__grid": [19,5],
 							"__pivot": [0.5,0.5],
 							"__tags": [],
 							"__tile": null,
@@ -13821,7 +13832,7 @@
 							"width": 16,
 							"height": 16,
 							"defUid": 145,
-							"px": [624,272],
+							"px": [624,176],
 							"fieldInstances": [
 								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-003", "__tile": null, "defUid": 146, "realEditorValues": [{
 									"id": "V_String",
@@ -13829,12 +13840,9 @@
 								}] },
 								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
 								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
-								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 0, "__tile": null, "defUid": 148, "realEditorValues": [{ "id": "V_Float", "params": [0] }] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [null] },
 								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
-								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [null] },
 								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
@@ -13846,15 +13854,15 @@
 									"params": [ true ]
 								}] },
 								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
-								{ "__identifier": "laserLength", "__type": "Float", "__value": 6, "__tile": null, "defUid": 157, "realEditorValues": [{ "id": "V_Float", "params": [6] }] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [null] },
 								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [null] },
-								{ "__identifier": "laserDuration", "__type": "Float", "__value": 3, "__tile": null, "defUid": 159, "realEditorValues": [] },
-								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [{ "id": "V_Float", "params": [1] }] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [null] },
 								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
 								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
 							],
 							"__worldX": 6800,
-							"__worldY": -1232
+							"__worldY": -1328
 						},
 						{
 							"__identifier": "Checkpoint",
@@ -13996,6 +14004,162 @@
 							],
 							"__worldX": 6816,
 							"__worldY": -1376
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [14,13],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "f527b030-6fc0-11f1-8178-a9b432207ae1",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [464,432],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-004", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-004"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 150, "realEditorValues": [] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 6640,
+							"__worldY": -1072
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [7,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "f63ffe00-6fc0-11f1-8178-1937e9d719a5",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [240,368],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-005", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-005"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 150, "realEditorValues": [] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 6416,
+							"__worldY": -1136
+						},
+						{
+							"__identifier": "KeyDoor",
+							"__grid": [58,13],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#EAD4AA",
+							"iid": "dcfb38f0-6fc0-11f1-8178-6b5cedfa51d6",
+							"width": 32,
+							"height": 64,
+							"defUid": 75,
+							"px": [1856,448],
+							"fieldInstances": [
+								{ "__identifier": "doorId", "__type": "String", "__value": "kd-prison-master-d", "__tile": null, "defUid": 76, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["kd-prison-master-d"]
+								}] },
+								{ "__identifier": "requiredKeyId", "__type": "String", "__value": "key-prison-master", "__tile": null, "defUid": 77, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["key-prison-master"]
+								}] },
+								{ "__identifier": "consumeKey", "__type": "Bool", "__value": false, "__tile": null, "defUid": 78, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "missingKeyMessage", "__type": "String", "__value": "You need the prison master key to open this door.", "__tile": null, "defUid": 79, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["You need the prison master key to open this door."]
+								}] },
+								{ "__identifier": "openedMessage", "__type": "String", "__value": "You unlocked the door.", "__tile": null, "defUid": 80, "realEditorValues": [] },
+								{ "__identifier": "startsOpen", "__type": "Bool", "__value": false, "__tile": null, "defUid": 81, "realEditorValues": [] }
+							],
+							"__worldX": 8032,
+							"__worldY": -1056
+						},
+						{
+							"__identifier": "RoomExit",
+							"__grid": [0,4],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "2b2afaf0-6fc0-11f1-8178-f3c53bd90ead",
+							"width": 32,
+							"height": 96,
+							"defUid": 11,
+							"px": [0,160],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_002", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_002"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-001", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-001"]
+								}] }
+							],
+							"__worldX": 6176,
+							"__worldY": -1344
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [1,4],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "342d7fb0-6fc0-11f1-8178-15a21fc56dc1",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [48,160],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-002", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-002"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": true, "__tile": null, "defUid": 10, "realEditorValues": [] }
+							],
+							"__worldX": 6224,
+							"__worldY": -1344
 						}
 					]
 				},
@@ -14022,12 +14186,12 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
@@ -14035,16 +14199,16 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						0,1,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,
 						1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,0,1,1,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
+						1,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,1,1,1,0,1,1,1,0,
-						0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,1,1,1,0,1,1,1,0,
+						0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,
 						0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -14057,7 +14221,1338 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "c10cd590-6fc0-11f1-b556-d15cd10a3eec", "dir": "n" }]
+			"__neighbours": [ { "levelIid": "c10cd590-6fc0-11f1-b556-d15cd10a3eec", "dir": "n" }, { "levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118", "dir": "w" }, { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "s" }, { "levelIid": "a3a9c5e0-6fc0-11f1-8178-c728b8aaf31c", "dir": "s" } ]
+		},
+		{
+			"identifier": "Forest_002",
+			"iid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+			"uid": 170,
+			"worldX": 4512,
+			"worldY": -1504,
+			"worldDepth": 0,
+			"pxWid": 1664,
+			"pxHei": 576,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#ADADB5",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [],
+			"layerInstances": [
+				{
+					"__identifier": "Entities",
+					"__type": "Entities",
+					"__cWid": 52,
+					"__cHei": 18,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "15f47d11-6fc0-11f1-8178-230228deff01",
+					"levelId": 170,
+					"layerDefUid": 2,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 8421892,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [38,5],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "cc934830-6fc0-11f1-8178-093aa4a9766b",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1232,176],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-006", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-006"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "d4c27760-6fc0-11f1-8178-275e3b9396c4",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["d4c27760-6fc0-11f1-8178-275e3b9396c4"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5744,
+							"__worldY": -1328
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [43,5],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "d4c27760-6fc0-11f1-8178-275e3b9396c4",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1392,176],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-006-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-006-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5904,
+							"__worldY": -1328
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [39,2],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "da1b5510-6fc0-11f1-8178-0fbf59f664e4",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1264,80],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-007", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-007"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "db95e720-6fc0-11f1-8178-1dbb2c6e04f3",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["db95e720-6fc0-11f1-8178-1dbb2c6e04f3"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5776,
+							"__worldY": -1424
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [32,2],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "db95e720-6fc0-11f1-8178-1dbb2c6e04f3",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1040,80],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-007-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-007-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5552,
+							"__worldY": -1424
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [26,5],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "de5ccf50-6fc0-11f1-8178-cf1780eab809",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [848,176],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-008", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-008"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "e31ca150-6fc0-11f1-8178-0dc056931653",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["e31ca150-6fc0-11f1-8178-0dc056931653"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5360,
+							"__worldY": -1328
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [28,2],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "deded090-6fc0-11f1-8178-05956d95e20c",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [912,80],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-009", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-009"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "e3bf9810-6fc0-11f1-8178-6dcd7df37f29",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["e3bf9810-6fc0-11f1-8178-6dcd7df37f29"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5424,
+							"__worldY": -1424
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [16,5],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "df5e39c0-6fc0-11f1-8178-ad5a7e879a90",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [528,176],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-010", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-010"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "e45373a0-6fc0-11f1-8178-93001ddce802",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["e45373a0-6fc0-11f1-8178-93001ddce802"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5040,
+							"__worldY": -1328
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [9,3],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "e0953320-6fc0-11f1-8178-27cc96230943",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [304,112],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-011", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-011"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 150, "realEditorValues": [] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 4816,
+							"__worldY": -1392
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [34,5],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "e31ca150-6fc0-11f1-8178-0dc056931653",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1104,176],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-008-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-008-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5616,
+							"__worldY": -1328
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [21,2],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "e3bf9810-6fc0-11f1-8178-6dcd7df37f29",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [688,80],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-009-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-009-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5200,
+							"__worldY": -1424
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [22,5],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "e45373a0-6fc0-11f1-8178-93001ddce802",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [720,176],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-010-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-010-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5232,
+							"__worldY": -1328
+						},
+						{
+							"__identifier": "RoomExit",
+							"__grid": [51,4],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "21b0fc40-6fc0-11f1-8178-8d895d020e89",
+							"width": 32,
+							"height": 96,
+							"defUid": 11,
+							"px": [1632,160],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_001", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_001"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-002", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-002"]
+								}] }
+							],
+							"__worldX": 6144,
+							"__worldY": -1344
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [50,4],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "3cc0a0d0-6fc0-11f1-8178-99162cc4164d",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1616,160],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-001", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-001"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 6128,
+							"__worldY": -1344
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [11,15],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "2440d970-6fc0-11f1-8178-3df3d155310d",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [368,496],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-012", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-012"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "8bf54fb0-6fc0-11f1-8178-6f0aa14847f0",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["8bf54fb0-6fc0-11f1-8178-6f0aa14847f0"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 4880,
+							"__worldY": -1008
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [22,12],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "27c67dc0-6fc0-11f1-8178-6f4563ed35d7",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [720,400],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-013", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-013"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "8cd1f410-6fc0-11f1-8178-afcddffbef7f",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["8cd1f410-6fc0-11f1-8178-afcddffbef7f"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5232,
+							"__worldY": -1104
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [28,15],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "2b733210-6fc0-11f1-8178-f39155750073",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [912,496],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-014", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-014"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "8d4fd6a0-6fc0-11f1-8178-ad09a7f91329",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["8d4fd6a0-6fc0-11f1-8178-ad09a7f91329"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5424,
+							"__worldY": -1008
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [33,12],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "2c890ee0-6fc0-11f1-8178-977fee3ecb6c",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1072,400],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-015", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-015"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "8e429b10-6fc0-11f1-8178-1dffae7a9c87",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["8e429b10-6fc0-11f1-8178-1dffae7a9c87"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5584,
+							"__worldY": -1104
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [40,15],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "2ee28f40-6fc0-11f1-8178-df06f126e335",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1296,496],
+							"fieldInstances": [
+								{ "__identifier": "crawlerId", "__type": "String", "__value": "en-lcrawler-forest-016", "__tile": null, "defUid": 146, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["en-lcrawler-forest-016"]
+								}] },
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "8ed76100-6fc0-11f1-8178-f32791577052",
+									"layerIid": "15f47d11-6fc0-11f1-8178-230228deff01",
+									"levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["8ed76100-6fc0-11f1-8178-f32791577052"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 5808,
+							"__worldY": -1008
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [17,15],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "8bf54fb0-6fc0-11f1-8178-6f0aa14847f0",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [560,496],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-012-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-012-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5072,
+							"__worldY": -1008
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [28,12],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "8cd1f410-6fc0-11f1-8178-afcddffbef7f",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [912,400],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-013-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-013-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5424,
+							"__worldY": -1104
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [22,15],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "8d4fd6a0-6fc0-11f1-8178-ad09a7f91329",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [720,496],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-014-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-014-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5232,
+							"__worldY": -1008
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [34,12],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "8e429b10-6fc0-11f1-8178-1dffae7a9c87",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1104,400],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-015-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-015-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5616,
+							"__worldY": -1104
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [39,15],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "8ed76100-6fc0-11f1-8178-f32791577052",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1264,496],
+							"fieldInstances": [
+								{ "__identifier": "pathPointId", "__type": "String", "__value": "pp-lcrawler-forest-016-01", "__tile": null, "defUid": 165, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pp-lcrawler-forest-016-01"]
+								}] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }
+							],
+							"__worldX": 5776,
+							"__worldY": -1008
+						},
+						{
+							"__identifier": "RoomExit",
+							"__grid": [46,17],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "2704f090-6fc0-11f1-8178-158afec424db",
+							"width": 128,
+							"height": 32,
+							"defUid": 11,
+							"px": [1472,576],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_003", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_003"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-002", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-002"]
+								}] }
+							],
+							"__worldX": 5984,
+							"__worldY": -928
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [45,15],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "50c9d760-6fc0-11f1-8178-210dbe622bd7",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1456,512],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-003", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-003"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 5968,
+							"__worldY": -992
+						}
+					]
+				},
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"__cWid": 52,
+					"__cHei": 18,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "15f4a420-6fc0-11f1-8178-eb6a7fcc9973",
+					"levelId": 170,
+					"layerDefUid": 1,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,0,1,1,0,0,0,0,
+						0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,0,
+						0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,
+						0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
+						0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1
+					],
+					"autoLayerTiles": [],
+					"seed": 9031234,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": [
+				{ "levelIid": "a4690c80-6fc0-11f1-9256-157e44a967c0", "dir": "sw" },
+				{ "levelIid": "d7a6f510-6fc0-11f1-8a7b-6fc23e840ffb", "dir": "w" },
+				{ "levelIid": "c10cd590-6fc0-11f1-b556-d15cd10a3eec", "dir": "n" },
+				{ "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "e" },
+				{ "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "s" }
+			]
+		},
+		{
+			"identifier": "Forest_003",
+			"iid": "5d702c40-6fc0-11f1-8178-f591210e19d2",
+			"uid": 171,
+			"worldX": 4512,
+			"worldY": -928,
+			"worldDepth": 0,
+			"pxWid": 1696,
+			"pxHei": 416,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#ADADB5",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [],
+			"layerInstances": [
+				{
+					"__identifier": "Entities",
+					"__type": "Entities",
+					"__cWid": 53,
+					"__cHei": 13,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "5d705350-6fc0-11f1-8178-6d02984d71a9",
+					"levelId": 171,
+					"layerDefUid": 2,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 3371962,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "RoomExit",
+							"__grid": [46,0],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "37d6f850-6fc0-11f1-8178-41d769ddf312",
+							"width": 128,
+							"height": 32,
+							"defUid": 11,
+							"px": [1472,32],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_002", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_002"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-003", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-003"]
+								}] }
+							],
+							"__worldX": 5984,
+							"__worldY": -896
+						},
+						{
+							"__identifier": "RoomExit",
+							"__grid": [52,10],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "42b62c50-6fc0-11f1-8178-6d4aa8fb4f52",
+							"width": 32,
+							"height": 96,
+							"defUid": 11,
+							"px": [1664,352],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_004", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_004"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-003", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-003"]
+								}] }
+							],
+							"__worldX": 6176,
+							"__worldY": -576
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [49,1],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "5c496a10-6fc0-11f1-8178-69a29694c14a",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1584,64],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-002", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-002"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 6096,
+							"__worldY": -864
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [51,10],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "600a42a0-6fc0-11f1-8178-5767e27261bd",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1648,352],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-004", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-004"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 6160,
+							"__worldY": -576
+						},
+						{
+							"__identifier": "Checkpoint",
+							"__grid": [47,10],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#63C74D",
+							"iid": "9773bf00-6fc0-11f1-8178-5d8a4d14fd54",
+							"width": 32,
+							"height": 32,
+							"defUid": 4,
+							"px": [1520,352],
+							"fieldInstances": [
+								{ "__identifier": "checkpointId", "__type": "String", "__value": "cp-forest-002", "__tile": null, "defUid": 5, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cp-forest-002"]
+								}] },
+								{ "__identifier": "startsActive", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6, "realEditorValues": [] }
+							],
+							"__worldX": 6032,
+							"__worldY": -576
+						}
+					]
+				},
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"__cWid": 53,
+					"__cHei": 13,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "5d705351-6fc0-11f1-8178-b9973eb47f52",
+					"levelId": 171,
+					"layerDefUid": 1,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,
+						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,1,
+						1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,
+						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,
+						0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+					],
+					"autoLayerTiles": [],
+					"seed": 8908241,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": [
+				{ "levelIid": "7487dfb0-6fc0-11f1-9256-039951085f2d", "dir": "w" },
+				{ "levelIid": "a4690c80-6fc0-11f1-9256-157e44a967c0", "dir": "w" },
+				{ "levelIid": "d7a6f510-6fc0-11f1-8a7b-6fc23e840ffb", "dir": "nw" },
+				{ "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "n" },
+				{ "levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118", "dir": "n" },
+				{ "levelIid": "a3a9c5e0-6fc0-11f1-8178-c728b8aaf31c", "dir": "e" }
+			]
+		},
+		{
+			"identifier": "Forest_004",
+			"iid": "a3a9c5e0-6fc0-11f1-8178-c728b8aaf31c",
+			"uid": 172,
+			"worldX": 6208,
+			"worldY": -928,
+			"worldDepth": 0,
+			"pxWid": 1888,
+			"pxHei": 416,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#ADADB5",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [],
+			"layerInstances": [
+				{
+					"__identifier": "Entities",
+					"__type": "Entities",
+					"__cWid": 59,
+					"__cHei": 13,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "a3a9c5e1-6fc0-11f1-8178-85655657c169",
+					"levelId": 172,
+					"layerDefUid": 2,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 4409314,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "RoomExit",
+							"__grid": [0,10],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "49f41db0-6fc0-11f1-8178-bd62ccd17767",
+							"width": 32,
+							"height": 96,
+							"defUid": 11,
+							"px": [0,352],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_003", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_003"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-004", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-004"]
+								}] }
+							],
+							"__worldX": 6208,
+							"__worldY": -576
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [1,10],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "64c9ed90-6fc0-11f1-8178-61958d232203",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [48,352],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-003", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-003"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": true, "__tile": null, "defUid": 10, "realEditorValues": [] }
+							],
+							"__worldX": 6256,
+							"__worldY": -576
+						}
+					]
+				},
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"__cWid": 59,
+					"__cHei": 13,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "a3a9c5e2-6fc0-11f1-8178-39712523cb2f",
+					"levelId": 172,
+					"layerDefUid": 1,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,1,1,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,
+						0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+					],
+					"autoLayerTiles": [],
+					"seed": 2783174,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": [ { "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "n" }, { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "w" } ]
 		}
 	],
 	"worlds": [],

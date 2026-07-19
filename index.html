@@ -2,14 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-PaSKuvZQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/browservania/assets/index-BRYfkCHt.css">
+    <script type="module" crossorigin src="/browservania/assets/index-BSzfkd2_.js"></script>
+    <link rel="stylesheet" crossorigin href="/browservania/assets/index-BERk9Kva.css">
   </head>
   <body>
     <main id="game" aria-label="Browservania game canvas"></main>
+
+    <button
+      id="pause-cog"
+      class="pause-cog"
+      type="button"
+      data-input-action="pause"
+      aria-label="Open pause menu"
+      title="Menu"
+    >&#9881;</button>
 
     <section id="hud" class="hud" aria-live="polite">
       <div
@@ -54,7 +63,14 @@
       <div id="boss-status" class="boss-hud__status" hidden></div>
     </section>
 
-    <div id="prompt" class="prompt" hidden></div>
+    <div
+      id="prompt"
+      class="prompt"
+      data-input-action="interact"
+      role="button"
+      aria-label="Interact"
+      hidden
+    ></div>
     <div id="toast" class="toast" hidden></div>
 
 
@@ -65,7 +81,7 @@
           <button id="pause-continue" type="button">Continue</button>
           <button id="pause-restart" type="button">Restart</button>
           <button id="pause-export-save" type="button">Export save file</button>
-          <button id="pause-import-save" type="button">Import save file</button>
+          <button id="pause-import-save" type="button">Load save file</button>
           <input
             id="pause-import-file"
             type="file"
@@ -73,8 +89,17 @@
             hidden
           />
         </div>
+        <label class="pause-menu__toggle" for="pause-touch-controls">
+          <input id="pause-touch-controls" type="checkbox" />
+          <span>
+            <strong>On-screen controls</strong>
+            <small>Show mobile movement and action buttons.</small>
+          </span>
+        </label>
         <p id="pause-status" class="pause-menu__status" aria-live="polite"></p>
       </section>
+
+      <div id="pause-version" class="pause-menu__version" aria-label="Game version"></div>
 
       <aside class="controls" aria-label="Controls">
         <strong>Move</strong> A/D or ←/→
@@ -111,7 +136,13 @@
         aria-labelledby="important-message-text"
       >
         <p id="important-message-text" class="important-message__text"></p>
-        <div id="important-message-progress" class="important-message__progress">E to continue</div>
+        <div
+          id="important-message-progress"
+          class="important-message__progress"
+          data-input-action="interact"
+          role="button"
+          aria-label="Continue"
+        >E to continue</div>
       </section>
     </div>
 
@@ -120,7 +151,13 @@
         <div id="dialogue-speaker" class="dialogue__speaker">Speaker</div>
         <p id="dialogue-text" class="dialogue__text"></p>
         <div id="dialogue-choices" class="dialogue__choices" hidden></div>
-        <div id="dialogue-progress" class="dialogue__progress">E to continue</div>
+        <div
+          id="dialogue-progress"
+          class="dialogue__progress"
+          data-input-action="interact"
+          role="button"
+          aria-label="Continue dialogue"
+        >E to continue</div>
       </section>
     </div>
 
@@ -154,6 +191,25 @@
         </form>
         <small>Press Escape to close.</small>
       </section>
+    </div>
+
+    <div id="touch-controls" class="touch-controls" aria-label="On-screen controls" hidden>
+      <div class="touch-dpad" aria-label="Movement controls">
+        <button class="touch-button touch-dpad__up" type="button" data-input-action="up" aria-label="Up">▲</button>
+        <button class="touch-button touch-dpad__left" type="button" data-input-action="left" aria-label="Left">◀</button>
+        <span class="touch-dpad__center" aria-hidden="true"></span>
+        <button class="touch-button touch-dpad__right" type="button" data-input-action="right" aria-label="Right">▶</button>
+        <button class="touch-button touch-dpad__down" type="button" data-input-action="down" aria-label="Down">▼</button>
+      </div>
+
+      <div class="touch-actions" aria-label="Action controls">
+        <button class="touch-button touch-action touch-action--l" type="button" aria-label="L, unassigned" disabled>L</button>
+        <button class="touch-button touch-action touch-action--r" type="button" aria-label="R, unassigned" disabled>R</button>
+        <button class="touch-button touch-action touch-action--y" type="button" aria-label="Y, unassigned" disabled>Y</button>
+        <button class="touch-button touch-action touch-action--x" type="button" data-input-action="attack" aria-label="X, attack">X</button>
+        <button class="touch-button touch-action touch-action--b" type="button" data-input-action="dash" aria-label="B, dash">B</button>
+        <button class="touch-button touch-action touch-action--a" type="button" data-input-action="jump" aria-label="A, jump or confirm">A</button>
+      </div>
     </div>
 
     <div id="debug-panel" class="debug-panel" hidden></div>

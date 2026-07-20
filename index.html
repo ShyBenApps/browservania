@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-C0tC-H4U.js"></script>
+    <script type="module" crossorigin src="/browservania/assets/index-BsgUsDNh.js"></script>
     <link rel="stylesheet" crossorigin href="/browservania/assets/index-BnB3XR_Y.css">
   </head>
   <body>
@@ -82,6 +82,7 @@
           <div class="pause-menu__actions">
             <button id="pause-continue" type="button">Continue</button>
             <button id="pause-restart" type="button">Restart</button>
+            <button id="pause-new-game" type="button">New Game</button>
             <button id="pause-settings" type="button">Settings</button>
             <button id="pause-export-save" type="button">Export save file</button>
             <button id="pause-import-save" type="button">Load save file</button>
@@ -95,6 +96,14 @@
         </div>
 
         <div id="pause-settings-view" class="pause-menu__settings" hidden>
+          <label class="pause-menu__toggle" for="pause-enhanced-visuals">
+            <input id="pause-enhanced-visuals" type="checkbox" checked />
+            <span>
+              <strong>Enhanced visuals</strong>
+              <small>Animated characters, parallax scenery, ambience, and decorative details.</small>
+            </span>
+          </label>
+
           <label class="pause-menu__toggle" for="pause-touch-controls">
             <input id="pause-touch-controls" type="checkbox" />
             <span>

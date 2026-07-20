@@ -11,7 +11,7 @@
 	"iid": "20bae0e0-6fc0-11f1-bdc5-4f35ddb46827",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 178,
+	"nextUid": 184,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": "Free",
@@ -4747,14 +4747,14 @@
 			"exportToToc": false,
 			"allowOutOfBounds": false,
 			"doc": null,
-			"width": 34,
-			"height": 34,
-			"resizableX": false,
-			"resizableY": false,
-			"minWidth": null,
-			"maxWidth": null,
-			"minHeight": null,
-			"maxHeight": null,
+			"width": 32,
+			"height": 32,
+			"resizableX": true,
+			"resizableY": true,
+			"minWidth": 32,
+			"maxWidth": 34,
+			"minHeight": 32,
+			"maxHeight": 34,
 			"keepAspectRatio": false,
 			"tileOpacity": 1,
 			"fillOpacity": 1,
@@ -4773,6 +4773,191 @@
 			"limitBehavior": "MoveLastOne",
 			"pivotX": 0.5,
 			"pivotY": 1,
+			"fieldDefs": []
+		},
+		{
+			"identifier": "PuzzleDoorBoxPlacement",
+			"uid": 179,
+			"tags": [],
+			"exportToToc": false,
+			"allowOutOfBounds": false,
+			"doc": null,
+			"width": 32,
+			"height": 64,
+			"resizableX": true,
+			"resizableY": true,
+			"minWidth": 32,
+			"maxWidth": null,
+			"minHeight": 32,
+			"maxHeight": null,
+			"keepAspectRatio": false,
+			"tileOpacity": 1,
+			"fillOpacity": 1,
+			"lineOpacity": 1,
+			"hollow": false,
+			"color": "#DE7F2A",
+			"renderMode": "Rectangle",
+			"showName": true,
+			"tilesetId": null,
+			"tileRenderMode": "FitInside",
+			"tileRect": null,
+			"uiTileRect": null,
+			"nineSliceBorders": [],
+			"maxCount": 0,
+			"limitScope": "PerLevel",
+			"limitBehavior": "MoveLastOne",
+			"pivotX": 0,
+			"pivotY": 1,
+			"fieldDefs": [
+				{
+					"identifier": "puzzleDoorId",
+					"doc": null,
+					"__type": "String",
+					"uid": 180,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": false,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "Hidden",
+					"editorDisplayScale": 1,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "StraightArrow",
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "OnlySame",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"tilesetUid": null
+				},
+				{
+					"identifier": "boxPlacementPuzzleTargets",
+					"doc": null,
+					"__type": "Array<EntityRef>",
+					"uid": 181,
+					"type": "F_EntityRef",
+					"isArray": true,
+					"canBeNull": false,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayScale": 1,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "CurvedArrow",
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": false,
+					"allowOutOfLevelRef": false,
+					"allowedRefs": "OnlySpecificEntity",
+					"allowedRefsEntityUid": 182,
+					"allowedRefTags": [],
+					"tilesetUid": null
+				},
+				{
+					"identifier": "message",
+					"doc": null,
+					"__type": "String",
+					"uid": 183,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "Hidden",
+					"editorDisplayScale": 1,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "StraightArrow",
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": ["This passage is blocked. There has to be a way to open it somehow."]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "OnlySame",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"tilesetUid": null
+				}
+			]
+		},
+		{
+			"identifier": "BoxPlacementPuzzleTarget",
+			"uid": 182,
+			"tags": [],
+			"exportToToc": false,
+			"allowOutOfBounds": false,
+			"doc": null,
+			"width": 16,
+			"height": 16,
+			"resizableX": false,
+			"resizableY": false,
+			"minWidth": null,
+			"maxWidth": null,
+			"minHeight": null,
+			"maxHeight": null,
+			"keepAspectRatio": false,
+			"tileOpacity": 1,
+			"fillOpacity": 1,
+			"lineOpacity": 1,
+			"hollow": true,
+			"color": "#FEE761",
+			"renderMode": "Rectangle",
+			"showName": true,
+			"tilesetId": null,
+			"tileRenderMode": "FitInside",
+			"tileRect": null,
+			"uiTileRect": null,
+			"nineSliceBorders": [],
+			"maxCount": 0,
+			"limitScope": "PerLevel",
+			"limitBehavior": "MoveLastOne",
+			"pivotX": 0.5,
+			"pivotY": 0.5,
 			"fieldDefs": []
 		}
 	], "tilesets": [], "enums": [
@@ -14647,8 +14832,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "6caa02d0-6fc0-11f1-b44c-195569ec263e",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [1104,352],
 							"fieldInstances": [],
@@ -14663,8 +14848,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "6d544c90-6fc0-11f1-b44c-91a199a2a1be",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [848,352],
 							"fieldInstances": [],
@@ -14759,7 +14944,8 @@
 				{ "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "n" },
 				{ "levelIid": "15f47d10-6fc0-11f1-8178-27fab17ad118", "dir": "n" },
 				{ "levelIid": "a3a9c5e0-6fc0-11f1-8178-c728b8aaf31c", "dir": "e" },
-				{ "levelIid": "5aba9340-6fc0-11f1-b44c-3f641e94f6fd", "dir": "s" }
+				{ "levelIid": "5aba9340-6fc0-11f1-b44c-3f641e94f6fd", "dir": "s" },
+				{ "levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4", "dir": "s" }
 			]
 		},
 		{
@@ -15089,7 +15275,7 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [ { "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "n" }, { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "w" } ]
+			"__neighbours": [ { "levelIid": "51a879d0-6fc0-11f1-b556-5f8e434cb438", "dir": "n" }, { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "w" }, { "levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4", "dir": "s" } ]
 		},
 		{
 			"identifier": "Forest_005",
@@ -15311,8 +15497,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "6fd1b990-6fc0-11f1-b44c-e13badbcb147",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [80,224],
 							"fieldInstances": [],
@@ -15327,8 +15513,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "70493380-6fc0-11f1-b44c-b14fb870e936",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [80,192],
 							"fieldInstances": [],
@@ -15343,8 +15529,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "bd169bd0-6fc0-11f1-b44c-0982fe1a95da",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [528,224],
 							"fieldInstances": [],
@@ -15359,8 +15545,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "bdfe3cb0-6fc0-11f1-b44c-078c4a7791ca",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [560,224],
 							"fieldInstances": [],
@@ -15375,8 +15561,8 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "beb04ea0-6fc0-11f1-b44c-39a401b3d6e3",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [944,224],
 							"fieldInstances": [],
@@ -15391,12 +15577,112 @@
 							"__tile": null,
 							"__smartColor": "#B73C20",
 							"iid": "bf01ca00-6fc0-11f1-b44c-ff69d718f3fb",
-							"width": 34,
-							"height": 34,
+							"width": 32,
+							"height": 32,
 							"defUid": 176,
 							"px": [976,224],
 							"fieldInstances": [],
 							"__worldX": 5488,
+							"__worldY": -288
+						},
+						{
+							"__identifier": "RoomExit",
+							"__grid": [49,6],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "57e3be90-6fc0-11f1-a809-ab638c63978a",
+							"width": 32,
+							"height": 96,
+							"defUid": 11,
+							"px": [1568,224],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_007", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_007"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-005", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-005"]
+								}] }
+							],
+							"__worldX": 6080,
+							"__worldY": -288
+						},
+						{
+							"__identifier": "RoomExit",
+							"__grid": [41,8],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "78fd1a40-6fc0-11f1-a809-c78dfe51d386",
+							"width": 128,
+							"height": 32,
+							"defUid": 11,
+							"px": [1312,288],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_006", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_006"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-005", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-005"]
+								}] }
+							],
+							"__worldX": 5824,
+							"__worldY": -224
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [40,6],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "c4048fa0-6fc0-11f1-a809-95ea3f804071",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1296,224],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-006", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-006"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 5808,
+							"__worldY": -288
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [48,6],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "c946ff20-6fc0-11f1-a809-33836b970a79",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1552,224],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-007", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-007"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 6064,
 							"__worldY": -288
 						}
 					]
@@ -15441,10 +15727,16 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [ { "levelIid": "4c266110-6fc0-11f1-bdc5-afbbb4406c05", "dir": "w" }, { "levelIid": "7487dfb0-6fc0-11f1-9256-039951085f2d", "dir": "w" }, { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "n" }, { "levelIid": "e80126a0-6fc0-11f1-b44c-cdc0761814e8", "dir": "s" } ]
+			"__neighbours": [
+				{ "levelIid": "4c266110-6fc0-11f1-bdc5-afbbb4406c05", "dir": "w" },
+				{ "levelIid": "7487dfb0-6fc0-11f1-9256-039951085f2d", "dir": "w" },
+				{ "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "n" },
+				{ "levelIid": "e80126a0-6fc0-11f1-b44c-cdc0761814e8", "dir": "s" },
+				{ "levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4", "dir": "e" }
+			]
 		},
 		{
-			"identifier": "Level_24",
+			"identifier": "Forest_006",
 			"iid": "e80126a0-6fc0-11f1-b44c-cdc0761814e8",
 			"uid": 175,
 			"worldX": 4512,
@@ -15454,7 +15746,7 @@
 			"pxHei": 1248,
 			"__bgColor": "#696A79",
 			"bgColor": null,
-			"useAutoIdentifier": true,
+			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
 			"bgPivotX": 0.5,
@@ -15487,7 +15779,58 @@
 					"seed": 3850419,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
-					"entityInstances": []
+					"entityInstances": [
+						{
+							"__identifier": "RoomExit",
+							"__grid": [41,0],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "907a7050-6fc0-11f1-a809-77415cd6be90",
+							"width": 128,
+							"height": 32,
+							"defUid": 11,
+							"px": [1312,32],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_005", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_005"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-006", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-006"]
+								}] }
+							],
+							"__worldX": 5824,
+							"__worldY": -192
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [43,1],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "bf2093d0-6fc0-11f1-a809-a539e891ca70",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [1392,64],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-005", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-005"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": false, "__tile": null, "defUid": 10, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							],
+							"__worldX": 5904,
+							"__worldY": -160
+						}
+					]
 				},
 				{
 					"__identifier": "Collision",
@@ -15513,10 +15856,10 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
 						1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -15572,7 +15915,866 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [ { "levelIid": "ecd0ced0-6fc0-11f1-bdc5-19862b2334de", "dir": "w" }, { "levelIid": "4c266110-6fc0-11f1-bdc5-afbbb4406c05", "dir": "w" }, { "levelIid": "5aba9340-6fc0-11f1-b44c-3f641e94f6fd", "dir": "n" } ]
+			"__neighbours": [ { "levelIid": "ecd0ced0-6fc0-11f1-bdc5-19862b2334de", "dir": "w" }, { "levelIid": "4c266110-6fc0-11f1-bdc5-afbbb4406c05", "dir": "w" }, { "levelIid": "5aba9340-6fc0-11f1-b44c-3f641e94f6fd", "dir": "n" }, { "levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4", "dir": "e" } ]
+		},
+		{
+			"identifier": "Forest_007",
+			"iid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+			"uid": 178,
+			"worldX": 6112,
+			"worldY": -512,
+			"worldDepth": 0,
+			"pxWid": 1984,
+			"pxHei": 800,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#ADADB5",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [],
+			"layerInstances": [
+				{
+					"__identifier": "Entities",
+					"__type": "Entities",
+					"__cWid": 62,
+					"__cHei": 25,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+					"levelId": 178,
+					"layerDefUid": 2,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 8842803,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "RoomExit",
+							"__grid": [0,6],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FE00DC",
+							"iid": "a3f2b8e0-6fc0-11f1-a809-cdafeb1db803",
+							"width": 32,
+							"height": 96,
+							"defUid": 11,
+							"px": [0,224],
+							"fieldInstances": [
+								{ "__identifier": "destinationLevelId", "__type": "String", "__value": "Forest_005", "__tile": null, "defUid": 12, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Forest_005"]
+								}] },
+								{ "__identifier": "destinationEntryId", "__type": "String", "__value": "from-forest-007", "__tile": null, "defUid": 13, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-007"]
+								}] }
+							],
+							"__worldX": 6112,
+							"__worldY": -288
+						},
+						{
+							"__identifier": "RoomEntry",
+							"__grid": [1,6],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#00D9D6",
+							"iid": "cc92a7b0-6fc0-11f1-a809-9b1829dca79a",
+							"width": 16,
+							"height": 32,
+							"defUid": 8,
+							"px": [48,224],
+							"fieldInstances": [
+								{ "__identifier": "entryId", "__type": "String", "__value": "from-forest-005", "__tile": null, "defUid": 9, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["from-forest-005"]
+								}] },
+								{ "__identifier": "faceRight", "__type": "Bool", "__value": true, "__tile": null, "defUid": 10, "realEditorValues": [] }
+							],
+							"__worldX": 6160,
+							"__worldY": -288
+						},
+						{
+							"__identifier": "PuzzleDoorBoxPlacement",
+							"__grid": [18,9],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#DE7F2A",
+							"iid": "3ed2a1c0-6fc0-11f1-a809-7b4d2188978c",
+							"width": 32,
+							"height": 160,
+							"defUid": 179,
+							"px": [576,320],
+							"fieldInstances": [
+								{ "__identifier": "puzzleDoorId", "__type": "String", "__value": "pdbp-forest-001", "__tile": null, "defUid": 180, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pdbp-forest-001"]
+								}] },
+								{ "__identifier": "boxPlacementPuzzleTargets", "__type": "Array<EntityRef>", "__value": [ {
+									"entityIid": "461cef30-6fc0-11f1-a809-8dfb314e7ee7",
+									"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+									"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}, {
+									"entityIid": "451b5db0-6fc0-11f1-a809-f38fd2fa98ff",
+									"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+									"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								} ], "__tile": null, "defUid": 181, "realEditorValues": [ {
+									"id": "V_String",
+									"params": ["461cef30-6fc0-11f1-a809-8dfb314e7ee7"]
+								}, {
+									"id": "V_String",
+									"params": ["451b5db0-6fc0-11f1-a809-f38fd2fa98ff"]
+								} ] },
+								{ "__identifier": "message", "__type": "String", "__value": "This passage is blocked. There has to be a way to open it somehow.", "__tile": null, "defUid": 183, "realEditorValues": [] }
+							],
+							"__worldX": 6688,
+							"__worldY": -192
+						},
+						{
+							"__identifier": "BoxPlacementPuzzleTarget",
+							"__grid": [14,9],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FEE761",
+							"iid": "451b5db0-6fc0-11f1-a809-f38fd2fa98ff",
+							"width": 16,
+							"height": 16,
+							"defUid": 182,
+							"px": [464,304],
+							"fieldInstances": [],
+							"__worldX": 6576,
+							"__worldY": -208
+						},
+						{
+							"__identifier": "BoxPlacementPuzzleTarget",
+							"__grid": [16,9],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FEE761",
+							"iid": "461cef30-6fc0-11f1-a809-8dfb314e7ee7",
+							"width": 16,
+							"height": 16,
+							"defUid": 182,
+							"px": [528,304],
+							"fieldInstances": [],
+							"__worldX": 6640,
+							"__worldY": -208
+						},
+						{
+							"__identifier": "PhysicsBox",
+							"__grid": [5,7],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B73C20",
+							"iid": "7be20a60-6fc0-11f1-a809-63f7c7ff81ce",
+							"width": 32,
+							"height": 32,
+							"defUid": 176,
+							"px": [176,256],
+							"fieldInstances": [],
+							"__worldX": 6288,
+							"__worldY": -256
+						},
+						{
+							"__identifier": "PhysicsBox",
+							"__grid": [8,7],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B73C20",
+							"iid": "7c7ff810-6fc0-11f1-a809-9bc8b8c65191",
+							"width": 32,
+							"height": 32,
+							"defUid": 176,
+							"px": [272,256],
+							"fieldInstances": [],
+							"__worldX": 6384,
+							"__worldY": -256
+						},
+						{
+							"__identifier": "PuzzleDoorBoxPlacement",
+							"__grid": [51,11],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#DE7F2A",
+							"iid": "8f7cc380-6fc0-11f1-a809-8bcca4c34ec8",
+							"width": 64,
+							"height": 64,
+							"defUid": 179,
+							"px": [1632,384],
+							"fieldInstances": [
+								{ "__identifier": "puzzleDoorId", "__type": "String", "__value": "pdbp-forest-002", "__tile": null, "defUid": 180, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pdbp-forest-002"]
+								}] },
+								{ "__identifier": "boxPlacementPuzzleTargets", "__type": "Array<EntityRef>", "__value": [
+									{
+										"entityIid": "d80a5f40-6fc0-11f1-a809-7f8437577788",
+										"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+										"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+										"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+									},
+									{
+										"entityIid": "dbd59810-6fc0-11f1-a809-fb3552b322bf",
+										"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+										"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+										"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+									},
+									{
+										"entityIid": "d92a7540-6fc0-11f1-a809-5934aa182e86",
+										"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+										"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+										"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+									},
+									{
+										"entityIid": "d89190a0-6fc0-11f1-a809-fdf37a2a06ad",
+										"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+										"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+										"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+									}
+								], "__tile": null, "defUid": 181, "realEditorValues": [ {
+									"id": "V_String",
+									"params": ["d80a5f40-6fc0-11f1-a809-7f8437577788"]
+								}, {
+									"id": "V_String",
+									"params": ["dbd59810-6fc0-11f1-a809-fb3552b322bf"]
+								}, {
+									"id": "V_String",
+									"params": ["d92a7540-6fc0-11f1-a809-5934aa182e86"]
+								}, {
+									"id": "V_String",
+									"params": ["d89190a0-6fc0-11f1-a809-fdf37a2a06ad"]
+								} ] },
+								{ "__identifier": "message", "__type": "String", "__value": "This passage is blocked. There has to be a way to open it somehow.", "__tile": null, "defUid": 183, "realEditorValues": [] }
+							],
+							"__worldX": 7744,
+							"__worldY": -128
+						},
+						{
+							"__identifier": "PhysicsBox",
+							"__grid": [40,10],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B73C20",
+							"iid": "d1a2f7c0-6fc0-11f1-a809-0de9ac2a6e71",
+							"width": 32,
+							"height": 32,
+							"defUid": 176,
+							"px": [1296,352],
+							"fieldInstances": [],
+							"__worldX": 7408,
+							"__worldY": -160
+						},
+						{
+							"__identifier": "PhysicsBox",
+							"__grid": [39,9],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B73C20",
+							"iid": "d21ae6e0-6fc0-11f1-a809-c90dcd91c567",
+							"width": 32,
+							"height": 32,
+							"defUid": 176,
+							"px": [1264,320],
+							"fieldInstances": [],
+							"__worldX": 7376,
+							"__worldY": -192
+						},
+						{
+							"__identifier": "PhysicsBox",
+							"__grid": [40,9],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B73C20",
+							"iid": "d28ae6c0-6fc0-11f1-a809-bb5a3d99471e",
+							"width": 32,
+							"height": 32,
+							"defUid": 176,
+							"px": [1296,320],
+							"fieldInstances": [],
+							"__worldX": 7408,
+							"__worldY": -192
+						},
+						{
+							"__identifier": "PhysicsBox",
+							"__grid": [41,10],
+							"__pivot": [0.5,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B73C20",
+							"iid": "d2f0fb90-6fc0-11f1-a809-ab3de8a2a4d3",
+							"width": 32,
+							"height": 32,
+							"defUid": 176,
+							"px": [1328,352],
+							"fieldInstances": [],
+							"__worldX": 7440,
+							"__worldY": -160
+						},
+						{
+							"__identifier": "BoxPlacementPuzzleTarget",
+							"__grid": [46,19],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FEE761",
+							"iid": "d80a5f40-6fc0-11f1-a809-7f8437577788",
+							"width": 16,
+							"height": 16,
+							"defUid": 182,
+							"px": [1488,624],
+							"fieldInstances": [],
+							"__worldX": 7600,
+							"__worldY": 112
+						},
+						{
+							"__identifier": "BoxPlacementPuzzleTarget",
+							"__grid": [38,3],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FEE761",
+							"iid": "d89190a0-6fc0-11f1-a809-fdf37a2a06ad",
+							"width": 16,
+							"height": 16,
+							"defUid": 182,
+							"px": [1232,112],
+							"fieldInstances": [],
+							"__worldX": 7344,
+							"__worldY": -400
+						},
+						{
+							"__identifier": "BoxPlacementPuzzleTarget",
+							"__grid": [45,6],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FEE761",
+							"iid": "d92a7540-6fc0-11f1-a809-5934aa182e86",
+							"width": 16,
+							"height": 16,
+							"defUid": 182,
+							"px": [1456,208],
+							"fieldInstances": [],
+							"__worldX": 7568,
+							"__worldY": -304
+						},
+						{
+							"__identifier": "BoxPlacementPuzzleTarget",
+							"__grid": [48,8],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FEE761",
+							"iid": "dbd59810-6fc0-11f1-a809-fb3552b322bf",
+							"width": 16,
+							"height": 16,
+							"defUid": 182,
+							"px": [1552,272],
+							"fieldInstances": [],
+							"__worldX": 7664,
+							"__worldY": -240
+						},
+						{
+							"__identifier": "DamageZone",
+							"__grid": [29,21],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#AB0808",
+							"iid": "0dbf9490-6fc0-11f1-a809-af15d02d8b1f",
+							"width": 480,
+							"height": 16,
+							"defUid": 34,
+							"px": [928,704],
+							"fieldInstances": [
+								{ "__identifier": "damage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 36, "realEditorValues": [] },
+								{ "__identifier": "kill", "__type": "Bool", "__value": false, "__tile": null, "defUid": 37, "realEditorValues": [] }
+							],
+							"__worldX": 7040,
+							"__worldY": 192
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [26,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "fce40500-6fc0-11f1-a809-45e9f10d4c51",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [848,368],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "086608b0-6fc0-11f1-a809-9d626d8017d9",
+									"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+									"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["086608b0-6fc0-11f1-a809-9d626d8017d9"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 999, "__tile": null, "defUid": 159, "realEditorValues": [{ "id": "V_Float", "params": [999] }] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 6960,
+							"__worldY": -144
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [30,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "01d40ec0-6fc0-11f1-a809-6be10ba9e438",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [976,368],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "09107980-6fc0-11f1-a809-af583b202860",
+									"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+									"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["09107980-6fc0-11f1-a809-af583b202860"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 999, "__tile": null, "defUid": 159, "realEditorValues": [{ "id": "V_Float", "params": [999] }] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7088,
+							"__worldY": -144
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [36,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "05d91c40-6fc0-11f1-a809-830e862887f8",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1168,368],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [{
+									"entityIid": "099cb3f0-6fc0-11f1-a809-673c11d8d130",
+									"layerIid": "4c7ce401-6fc0-11f1-a809-21beb2e09f42",
+									"levelIid": "4c7ce400-6fc0-11f1-a809-69f3612d84f4",
+									"worldIid": "20bb07f0-6fc0-11f1-bdc5-f909bfd355d1"
+								}], "__tile": null, "defUid": 153, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["099cb3f0-6fc0-11f1-a809-673c11d8d130"]
+								}] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7280,
+							"__worldY": -144
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [28,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "086608b0-6fc0-11f1-a809-9d626d8017d9",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [912,368],
+							"fieldInstances": [{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }],
+							"__worldX": 7024,
+							"__worldY": -144
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [33,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "09107980-6fc0-11f1-a809-af583b202860",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1072,368],
+							"fieldInstances": [{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }],
+							"__worldX": 7184,
+							"__worldY": -144
+						},
+						{
+							"__identifier": "EnemyPathPoint",
+							"__grid": [35,11],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#750000",
+							"iid": "099cb3f0-6fc0-11f1-a809-673c11d8d130",
+							"width": 16,
+							"height": 16,
+							"defUid": 164,
+							"px": [1136,368],
+							"fieldInstances": [{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 168, "realEditorValues": [] }],
+							"__worldX": 7248,
+							"__worldY": -144
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [42,14],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "22cb3c70-6fc0-11f1-a809-259778d5ab5a",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1360,464],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7472,
+							"__worldY": -48
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [37,14],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "2add46b0-6fc0-11f1-a809-63f1db53e308",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1200,464],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0.33, "__tile": null, "defUid": 161, "realEditorValues": [{ "id": "V_Float", "params": [0.33] }] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7312,
+							"__worldY": -48
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [32,14],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "2be14930-6fc0-11f1-a809-c59986227718",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1040,464],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": false, "__tile": null, "defUid": 154, "realEditorValues": [] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0.66, "__tile": null, "defUid": 161, "realEditorValues": [{ "id": "V_Float", "params": [0.66] }] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7152,
+							"__worldY": -48
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [36,22],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "5f0e4270-6fc0-11f1-a809-1127d99a0c37",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1168,720],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0, "__tile": null, "defUid": 161, "realEditorValues": [] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7280,
+							"__worldY": 208
+						},
+						{
+							"__identifier": "EnemyLaserCrawler",
+							"__grid": [32,14],
+							"__pivot": [0.5,0.5],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E30C0F",
+							"iid": "ff302b00-6fc0-11f1-99b8-176961cd84ce",
+							"width": 16,
+							"height": 16,
+							"defUid": 145,
+							"px": [1040,464],
+							"fieldInstances": [
+								{ "__identifier": "hp", "__type": "Int", "__value": 5, "__tile": null, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "snapToCollision", "__type": "Bool", "__value": true, "__tile": null, "defUid": 169, "realEditorValues": [] },
+								{ "__identifier": "moveSpeed", "__type": "Float", "__value": 2, "__tile": null, "defUid": 148, "realEditorValues": [] },
+								{ "__identifier": "contactDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 163, "realEditorValues": [] },
+								{ "__identifier": "invincible", "__type": "Bool", "__value": true, "__tile": null, "defUid": 149, "realEditorValues": [] },
+								{ "__identifier": "circleCollision", "__type": "Bool", "__value": false, "__tile": null, "defUid": 150, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "clockwise", "__type": "Bool", "__value": true, "__tile": null, "defUid": 152, "realEditorValues": [] },
+								{ "__identifier": "pathPoints", "__type": "Array<EntityRef>", "__value": [], "__tile": null, "defUid": 153, "realEditorValues": [] },
+								{ "__identifier": "laser", "__type": "Bool", "__value": true, "__tile": null, "defUid": 154, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "laserAngle", "__type": "Float", "__value": 0, "__tile": null, "defUid": 156, "realEditorValues": [] },
+								{ "__identifier": "laserLength", "__type": "Float", "__value": 50, "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "laserGrowSpeed", "__type": "Float", "__value": 20, "__tile": null, "defUid": 158, "realEditorValues": [] },
+								{ "__identifier": "laserDuration", "__type": "Float", "__value": 2, "__tile": null, "defUid": 159, "realEditorValues": [] },
+								{ "__identifier": "laserInterval", "__type": "Float", "__value": 1, "__tile": null, "defUid": 160, "realEditorValues": [] },
+								{ "__identifier": "laserInitialDelay", "__type": "Float", "__value": 0.66, "__tile": null, "defUid": 161, "realEditorValues": [{ "id": "V_Float", "params": [0.66] }] },
+								{ "__identifier": "laserDamage", "__type": "Int", "__value": 1, "__tile": null, "defUid": 162, "realEditorValues": [] }
+							],
+							"__worldX": 7152,
+							"__worldY": -48
+						}
+					]
+				},
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"__cWid": 62,
+					"__cHei": 25,
+					"__gridSize": 32,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "4c7d0b10-6fc0-11f1-a809-cdc80ad854dc",
+					"levelId": 178,
+					"layerDefUid": 1,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,
+						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,0,
+						1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,1,0,0,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,0,0,1,1,0,0,
+						1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,0,0,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
+						1,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,
+						0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,0,0,0,0,0,0,0,0,0
+					],
+					"autoLayerTiles": [],
+					"seed": 145600,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": [ { "levelIid": "5d702c40-6fc0-11f1-8178-f591210e19d2", "dir": "n" }, { "levelIid": "a3a9c5e0-6fc0-11f1-8178-c728b8aaf31c", "dir": "n" }, { "levelIid": "5aba9340-6fc0-11f1-b44c-3f641e94f6fd", "dir": "w" }, { "levelIid": "e80126a0-6fc0-11f1-b44c-cdc0761814e8", "dir": "w" } ]
 		}
 	],
 	"worlds": [],

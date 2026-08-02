@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-BsgUsDNh.js"></script>
-    <link rel="stylesheet" crossorigin href="/browservania/assets/index-BnB3XR_Y.css">
+    <script type="module" crossorigin src="/browservania/assets/index-CgKxLj_V.js"></script>
+    <link rel="stylesheet" crossorigin href="/browservania/assets/index-B4nOMHUg.css">
   </head>
   <body>
     <main id="game" aria-label="Browservania game canvas"></main>
@@ -104,6 +104,14 @@
             </span>
           </label>
 
+          <label class="pause-menu__toggle" for="pause-show-damage-numbers">
+            <input id="pause-show-damage-numbers" type="checkbox" checked />
+            <span>
+              <strong>Show damage numbers</strong>
+              <small>Display floating red numbers when the player damages enemies or bosses.</small>
+            </span>
+          </label>
+
           <label class="pause-menu__toggle" for="pause-touch-controls">
             <input id="pause-touch-controls" type="checkbox" />
             <span>
@@ -161,6 +169,7 @@
 
           <div class="pause-menu__subactions">
             <button id="pause-show-keybindings" type="button">Show Keybindings</button>
+            <button id="pause-open-godmode" type="button">Open God Mode</button>
             <button id="pause-settings-back" class="pause-menu__back" type="button">Back</button>
           </div>
         </div>
@@ -175,6 +184,41 @@
       </section>
 
       <div id="pause-version" class="pause-menu__version" aria-label="Game version"></div>
+    </div>
+
+    <div id="inventory" class="inventory" hidden>
+      <section
+        class="inventory__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="inventory-title"
+      >
+        <header class="inventory__header">
+          <div>
+            <p class="inventory__eyebrow">Character</p>
+            <h2 id="inventory-title">Inventory</h2>
+          </div>
+          <button id="inventory-close" class="inventory__close" type="button">Close</button>
+        </header>
+
+        <nav id="inventory-tabs" class="inventory__tabs" aria-label="Inventory sections">
+          <button type="button" data-inventory-tab="items" role="tab">Items</button>
+          <button type="button" data-inventory-tab="upgrades" role="tab">Upgrades</button>
+          <button type="button" data-inventory-tab="documents" role="tab">Documents</button>
+        </nav>
+
+        <div class="inventory__layout">
+          <div id="inventory-list" class="inventory__list" aria-label="Inventory entries"></div>
+          <article class="inventory__detail">
+            <h3 id="inventory-detail-title">Items</h3>
+            <p id="inventory-detail-body">Select an inventory entry.</p>
+          </article>
+        </div>
+
+        <p class="inventory__help">
+          WASD to navigate · E to select · I or Escape to close
+        </p>
+      </section>
     </div>
 
     <div id="important-message" class="important-message" hidden>
@@ -193,6 +237,24 @@
           tabindex="0"
           aria-label="Continue"
         >E to continue</div>
+      </section>
+    </div>
+
+    <div id="combination-lock" class="combination-lock" hidden>
+      <section
+        class="combination-lock__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="combination-lock-prompt"
+      >
+        <p id="combination-lock-prompt" class="combination-lock__prompt"></p>
+        <div id="combination-lock-digits" class="combination-lock__digits"></div>
+        <p id="combination-lock-status" class="combination-lock__status" aria-live="polite"></p>
+        <div class="combination-lock__actions">
+          <button id="combination-lock-confirm" type="button">Unlock</button>
+          <button id="combination-lock-cancel" type="button">Cancel</button>
+        </div>
+        <small>Left/Right select · Up/Down change · E confirms · Escape cancels</small>
       </section>
     </div>
 
@@ -227,11 +289,11 @@
           <datalist id="godmode-checkpoints"></datalist>
           <label class="godmode__toggle" for="godmode-invincible">
             <input id="godmode-invincible" type="checkbox" />
-            <span>Invicible</span>
+            <span>Invicible <small>F1</small></span>
           </label>
           <label class="godmode__toggle" for="godmode-fly">
             <input id="godmode-fly" type="checkbox" />
-            <span>Fly <small>Space up · Left Shift down</small></span>
+            <span>Fly <small>F2 · Space up · Left Shift down</small></span>
           </label>
           <div class="godmode__actions">
             <button type="submit">Teleport</button>
@@ -256,10 +318,17 @@
         <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--down">▼</span>
       </div>
 
+      <button
+        class="touch-inventory-button"
+        type="button"
+        data-input-action="inventory"
+        aria-label="Open Inventory"
+      >Inventory</button>
+
       <div class="touch-actions" aria-label="Action controls">
-        <button class="touch-button touch-action touch-action--l" type="button" aria-label="L, unassigned" disabled>L</button>
-        <button class="touch-button touch-action touch-action--r" type="button" aria-label="R, unassigned" disabled>R</button>
-        <button class="touch-button touch-action touch-action--y" type="button" aria-label="Y, unassigned" disabled>Y</button>
+        <button id="touch-inventory-tab-left" class="touch-button touch-action touch-action--l" type="button" data-input-action="inventoryTabLeft" aria-label="L, available inside Inventory" disabled>L</button>
+        <button id="touch-inventory-tab-right" class="touch-button touch-action touch-action--r" type="button" data-input-action="inventoryTabRight" aria-label="R, available inside Inventory" disabled>R</button>
+        <button class="touch-button touch-action touch-action--y" type="button" data-input-action="slingtile" aria-label="Y, Slingtiles">Y</button>
         <button class="touch-button touch-action touch-action--x" type="button" data-input-action="attack" aria-label="X, attack">X</button>
         <button class="touch-button touch-action touch-action--b" type="button" data-input-action="dash" aria-label="B, dash">B</button>
         <button class="touch-button touch-action touch-action--a" type="button" data-input-action="jump" aria-label="A, jump or confirm">A</button>

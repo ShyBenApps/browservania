@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-BQgWgwHC.js"></script>
-    <link rel="stylesheet" crossorigin href="/browservania/assets/index-B4nOMHUg.css">
+    <script type="module" crossorigin src="/browservania/assets/index-C2cpqu3B.js"></script>
+    <link rel="stylesheet" crossorigin href="/browservania/assets/index-ftn-rri3.css">
   </head>
   <body>
     <main id="game" aria-label="Browservania game canvas"></main>
@@ -184,6 +184,49 @@
       </section>
 
       <div id="pause-version" class="pause-menu__version" aria-label="Game version"></div>
+    </div>
+
+    <div id="shop" class="shop" hidden>
+      <section class="shop__panel" role="dialog" aria-modal="true" aria-labelledby="shop-title">
+        <header class="shop__header">
+          <div>
+            <p class="shop__eyebrow">Inventions &amp; upgrades</p>
+            <h2 id="shop-title">Sarah's Shop</h2>
+          </div>
+          <button id="shop-close" class="shop__close" type="button">Close</button>
+        </header>
+        <div id="shop-list" class="shop__list" aria-label="Shop items"></div>
+        <footer class="shop__footer">
+          <strong id="shop-money">Your Money: 0</strong>
+          <span id="shop-status" aria-live="polite"></span>
+        </footer>
+        <p class="shop__help">W/S or arrow keys to choose · E to buy · Escape to close</p>
+      </section>
+    </div>
+
+    <div id="teleporter-menu" class="teleporter-menu" hidden>
+      <section
+        class="teleporter-menu__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="teleporter-title"
+      >
+        <header class="teleporter-menu__header">
+          <div>
+            <p class="teleporter-menu__eyebrow">Fast travel network</p>
+            <h2 id="teleporter-title">Available Teleporters</h2>
+          </div>
+          <button id="teleporter-close" class="teleporter-menu__close" type="button">Close</button>
+        </header>
+        <div id="teleporter-list" class="teleporter-menu__list" aria-label="Unlocked teleporters"></div>
+        <p id="teleporter-empty" class="teleporter-menu__empty" hidden>
+          No other teleporters have been discovered yet.
+        </p>
+        <footer class="teleporter-menu__footer">
+          <span id="teleporter-status" aria-live="polite"></span>
+        </footer>
+        <p class="teleporter-menu__help">W/S or arrow keys to choose · E to teleport · Escape to close</p>
+      </section>
     </div>
 
     <div id="inventory" class="inventory" hidden>

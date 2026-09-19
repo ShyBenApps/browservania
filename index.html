@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Browservania — a browser-based metroidvania built with Three.js." />
     <title>Browservania</title>
-    <script type="module" crossorigin src="/browservania/assets/index-C2cpqu3B.js"></script>
-    <link rel="stylesheet" crossorigin href="/browservania/assets/index-ftn-rri3.css">
+    <script type="module" crossorigin src="/browservania/assets/index-DHtxzNlX.js"></script>
+    <link rel="stylesheet" crossorigin href="/browservania/assets/index-CR8NmUZM.css">
   </head>
   <body>
     <main id="game" aria-label="Browservania game canvas"></main>
@@ -40,13 +40,19 @@
         </div>
         <div id="hud-heal" class="hud-ability hud-ability--heal hud-ability--numbered" title="Healing charges" hidden>
           <div id="hud-heal-fill" class="hud-ability__fill"></div>
+          <span id="hud-heal-recharge" class="hud-heal-recharge" aria-hidden="true"></span>
           <span class="hud-ability__icon" aria-hidden="true">+</span>
           <span id="hud-heal-value" class="hud-ability__value">0</span>
         </div>
         <div id="hud-heart-grenade" class="hud-ability hud-ability--grenade" title="Heart grenade" hidden>
           <div id="hud-heart-grenade-fill" class="hud-ability__fill"></div>
-          <span class="hud-ability__icon" aria-hidden="true">●</span>
+          <span class="hud-ability__icon hud-ability__icon--explosion" aria-hidden="true">✹</span>
           <span id="hud-heart-grenade-value" class="hud-ability__value"></span>
+        </div>
+        <div id="hud-heart-beam" class="hud-ability hud-ability--beam" title="Heart Beam" hidden>
+          <div id="hud-heart-beam-fill" class="hud-ability__fill"></div>
+          <span class="hud-ability__icon" aria-hidden="true">♥</span>
+          <span id="hud-heart-beam-value" class="hud-ability__value"></span>
         </div>
       </div>
     </section>
@@ -301,6 +307,55 @@
       </section>
     </div>
 
+    <div id="number-sum-puzzle" class="number-sum-puzzle" hidden>
+      <section
+        class="number-sum-puzzle__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="number-sum-puzzle-prompt"
+      >
+        <div id="number-sum-puzzle-intro" class="number-sum-puzzle__intro">
+          <p id="number-sum-puzzle-intro-text"></p>
+          <button id="number-sum-puzzle-intro-continue" type="button">Continue</button>
+        </div>
+        <div id="number-sum-puzzle-game" hidden>
+          <p id="number-sum-puzzle-prompt" class="number-sum-puzzle__prompt"></p>
+          <div id="number-sum-puzzle-pools" class="number-sum-puzzle__pools"></div>
+          <div id="number-sum-puzzle-equation" class="number-sum-puzzle__equation"></div>
+          <p id="number-sum-puzzle-status" class="number-sum-puzzle__status" aria-live="polite"></p>
+          <div class="number-sum-puzzle__actions">
+            <button id="number-sum-puzzle-confirm" type="button">Apply calculation</button>
+            <button id="number-sum-puzzle-cancel" type="button">Cancel</button>
+          </div>
+          <small>Left/Right select a pool · Up/Down change its value · E confirms</small>
+        </div>
+        <div id="rotation-puzzle-game" class="rotation-puzzle" hidden>
+          <p id="rotation-puzzle-prompt" class="number-sum-puzzle__prompt"></p>
+          <svg
+            id="rotation-puzzle-board"
+            class="rotation-puzzle__board"
+            viewBox="0 0 100 100"
+            role="img"
+            aria-label="Rotating key puzzle board"
+          ></svg>
+          <div class="rotation-puzzle__progress" aria-hidden="true">
+            <div id="rotation-puzzle-progress-fill" class="rotation-puzzle__progress-fill"></div>
+          </div>
+          <p id="rotation-puzzle-status" class="rotation-puzzle__status" aria-live="polite"></p>
+          <div class="rotation-puzzle__controls" aria-label="Rotation puzzle controls">
+            <button id="rotation-puzzle-left" type="button" aria-label="Rotate left">Rotate left</button>
+            <button id="rotation-puzzle-right" type="button" aria-label="Rotate right">Rotate right</button>
+            <button id="rotation-puzzle-grow" type="button" aria-label="Make key larger">Larger</button>
+            <button id="rotation-puzzle-shrink" type="button" aria-label="Make key smaller">Smaller</button>
+          </div>
+          <div class="number-sum-puzzle__actions">
+            <button id="rotation-puzzle-cancel" type="button">Cancel</button>
+          </div>
+          <small>Left/Right rotate · Up/Down resize · Escape cancels</small>
+        </div>
+      </section>
+    </div>
+
     <div id="dialogue" class="dialogue" hidden>
       <section id="dialogue-panel" class="dialogue__panel" role="dialog" aria-modal="true" aria-labelledby="dialogue-speaker">
         <div id="dialogue-speaker" class="dialogue__speaker">Speaker</div>
@@ -360,6 +415,14 @@
         <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--right">▶</span>
         <span class="touch-gesture-indicator__arrow touch-gesture-indicator__arrow--down">▼</span>
       </div>
+      <div
+        id="touch-camera-look-zone"
+        class="touch-camera-look-zone"
+        aria-label="Camera look gesture area"
+      ></div>
+      <div id="touch-camera-look-indicator" class="touch-camera-look-indicator" aria-hidden="true" hidden>
+        <span id="touch-camera-look-knob" class="touch-camera-look-indicator__knob"></span>
+      </div>
 
       <button
         class="touch-inventory-button"
@@ -369,8 +432,10 @@
       >Inventory</button>
 
       <div class="touch-actions" aria-label="Action controls">
-        <button id="touch-inventory-tab-left" class="touch-button touch-action touch-action--l" type="button" data-input-action="inventoryTabLeft" aria-label="L, available inside Inventory" disabled>L</button>
-        <button id="touch-inventory-tab-right" class="touch-button touch-action touch-action--r" type="button" data-input-action="inventoryTabRight" aria-label="R, available inside Inventory" disabled>R</button>
+        <button id="touch-inventory-tab-left" class="touch-button touch-action touch-action--l" type="button" data-input-action="heartGrenade" aria-label="L, Heart Grenade not yet available" title="Heart Grenade not yet available" disabled>L</button>
+        <button id="touch-ninja-rope" class="touch-button touch-action touch-action--rope" type="button" data-input-action="ninjaRope" aria-label="Ninja Rope not yet available" title="Ninja Rope not yet available" disabled><span class="touch-rope-icon" aria-hidden="true"></span></button>
+        <button id="touch-inventory-tab-right" class="touch-button touch-action touch-action--r" type="button" data-input-action="heal" aria-label="R, healing not yet available" title="Healing not yet available" disabled>R</button>
+        <button id="touch-heart-beam" class="touch-button touch-action touch-action--beam" type="button" data-input-action="heartBeam" aria-label="Heart Beam not yet available" title="Heart Beam not yet available" disabled>♥</button>
         <button class="touch-button touch-action touch-action--y" type="button" data-input-action="slingtile" aria-label="Y, Slingtiles">Y</button>
         <button class="touch-button touch-action touch-action--x" type="button" data-input-action="attack" aria-label="X, attack">X</button>
         <button class="touch-button touch-action touch-action--b" type="button" data-input-action="dash" aria-label="B, dash">B</button>
@@ -378,6 +443,6 @@
       </div>
     </div>
 
-    <div id="debug-panel" class="debug-panel" hidden></div>
+    <div id="debug-panel" class="debug-panel" hidden></div>
   </body>
 </html>
